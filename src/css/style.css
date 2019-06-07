@@ -1,0 +1,221 @@
+*, 
+*::before,
+*::after{
+box-sizing: inherit;
+}
+html{
+    
+	/*box-sizing: border-box;*/
+    background-color: #a398a3;
+    color: aliceblue;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 200px;
+    text-rendering: optimizeLegibility;
+	/*font-size: 62.5%*/
+}
+body{
+    max-width: 1200px;
+    margin:0 auto;
+     }
+/*General features of the animation iterms on the page;*/
+.sun,  .sky, .service_header, .spin, .header{
+    animation-duration: 15s;
+    animation-iteration-count: infinite; 
+    animation-direction:  alternate;
+    animation-timing-function: cubic-bezier(0.680, -0.2, 0.265, 1.2);
+}
+/* the headerpage;*/
+.header{
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: header;
+  background-size:  cover;
+}
+
+@-webkit-keyframes header{
+   0% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(img/3.jpg);
+    background-size: cover;
+    background-position: center;
+       height: 100vh;
+    }
+    25% { background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(img/4.jpg);
+    background-size: cover;
+    background-position: center;
+       height: 100vh;}
+    50%{background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(img/5.jpg);
+    background-size: cover;
+    background-position: center;
+       height: 100vh;}
+    75%{background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(img/6.jpg);
+    background-size: cover;
+    background-position: center;
+       height: 100vh;}
+    100%{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(img/7.jpg);
+    background-size: cover;
+    background-position: center;
+       height: 100vh;
+    }
+}
+.middle{
+  position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+    
+}
+h1{
+     margin: 0px;
+     color: #8b367d
+}
+.middle p{
+     text-align: center;
+    color: #fff;
+}
+/*-----------------------------------------------*/
+/*Starting the navigation bar*/
+/*-----------------------------------------------*/
+.nav{
+  display: flex;
+    justify-content: space-between;
+     
+    
+}
+ul li{
+    display: flex;
+    padding: 15px;
+
+    
+}
+ul li a{
+    padding: 15px;
+   
+    font-size: 0.85rem;
+    
+    
+}
+ul li a:hover{
+    padding: 15px;
+    background-color: #fff;
+    font-size: 0.85rem;
+    border-radius: 10px;
+    
+    
+}
+
+
+/*-----------------------------------------------*/
+/*Ending the navigation bar*/
+/*-----------------------------------------------*/
+
+
+/*-----------------------------------------------
+Service page styling
+/*-----------------------------------------------*/
+@-webkit-keyframes service_header{
+  0% {
+      width:0%
+  }
+
+  100% {
+       width:50%
+  }    
+}
+
+.service_header{
+   width: 400px;
+    border-bottom: 0.25em solid #a398a3;
+    border-bottom-width: 2px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+     animation-name: service_header;
+    
+}
+.service{
+    display: flex;
+    padding: 0 20px;
+}
+
+.service1{
+    margin: 1em;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    
+}
+
+/*-----------------------------------------------
+The team page styling
+/*-----------------------------------------------*/
+.section_team{
+background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(img/NEWLOGO.JPG);
+    background-size: cover;
+    color: rgba(243, 240, 236, 0.904);
+    background-attachment: fixed;
+    
+}
+.profile-one .profile-head{
+    text-align: center;
+
+}
+.profile-one{
+   margin: 2em;
+   display: flex; 
+    
+}
+figure{
+    margin-top: 4em;
+    margin-left: 0.5em;
+}
+.right{
+    margin-left: 0.7em;
+}
+
+.img-profile{
+    flex: 0 0 1;
+    
+}
+/*-----------------------------------------------
+The Contact us styling
+/*-----------------------------------------------*/
+#edit-reset{
+    margin-left: 0.85em;
+    
+}
+/*-----------------------------------------------
+The footer styling
+/*-----------------------------------------------*/
+footer{
+    background-color: #5846ba;
+    color: #fff;
+    display: flex;
+    justify-content: space-between
+}
+
+.footer-0 {
+    display: flex;
+    justify-content: space-between;
+    border-right: 2px solid white;
+    margin-top: 2em;
+    padding: 2em;
+}
+.footer-0 .list-1{
+    padding: 20px;
+    
+}
+.last_foot{
+    
+    position: relative;
+	width: 100%;
+	height: 10vh;
+    color: #fff;
+	background: #26292E;
+	text-align: center;
+	z-index: 99;
+}
+
+
