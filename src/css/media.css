@@ -1,39 +1,25 @@
-
-
 /*media query big screens*/
-@media only screen and(max-width:1200px){
-    body{
+@media only screen and(max-width:1200px) {
+    body {
         max-width: 100%;
-        margin:0 auto;
-         }
+        margin: 0 auto;
+    }
 
 
 
 }
+
 /*media query from small tablet to big tablet*/
-@media only screen and(max-width:1023px){
+@media only screen and(max-width:1023px) {}
 
-
-
-
-}
 /*media query small phones to tablets */
-@media only screen and(max-width:767px){
-
-
-
-
-}
+@media only screen and(max-width:767px) {}
 
 /*media query small phone from 480px screens*/
-@media only screen and(max-width:480px){
-
-
-
+@media only screen and(max-width:480px) {
+    .header{
+       width: 100vh;
+       
+      }
 
 }
-
-
-
-
-
